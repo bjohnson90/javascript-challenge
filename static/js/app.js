@@ -20,7 +20,7 @@ function genContents(data) {
 function clickHandler() {
     const dateInput = d3.select("#datetime").property("value");
 
-    let cleanedContent = content
+    let cleanedContent = tableData
 
     if (dateInput){
         cleanedContent = cleanedContent.filter(row => row.datetime === dateInput)
