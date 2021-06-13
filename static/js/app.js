@@ -8,7 +8,7 @@ function genContents(data) {
 
     data.forEach((contentRow) => {
 
-        const row = contents.append("tr");
+        const row = content.append("tr");
 
         Object.values(contentRow).forEach((val) => {
             let cell = row.append("td");
