@@ -18,12 +18,12 @@ function genContents(data) {
 }
 
 function clickHandler() {
-    const dateInput = d3.select("#datatime").property("value");
+    const dateInput = d3.select("#datetime").property("value");
 
     let cleanedContent = content
 
     if (dateInput){
-        cleanedContent = cleanedContent.filter(row => row.datetime === date)
+        cleanedContent = cleanedContent.filter(row => row.datetime === dateInput)
     }
 
     genContents(cleanedContent)
