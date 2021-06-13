@@ -10,7 +10,7 @@ function genContents(data) {
 
         const row = contents.append("tr");
 
-        Object.values(contentRow).firEach((val) => {
+        Object.values(contentRow).forEach((val) => {
             let cell = row.append("td");
             cell.text(val);
         })
